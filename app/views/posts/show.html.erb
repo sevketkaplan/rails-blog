@@ -1,0 +1,52 @@
+<div class="panel panel-default widget">
+
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                        <%=image_tag @post.user.image.url(:mini) if @post.user.image?%>
+                    </div>
+                    <div class="col-xs-10 col-md-11">
+                        <div>
+                            <div class="mic-info">
+                                 <a href="?user=<%=@post.user.id%>"> <%=@post.user.name%> </a> <%=@post.created_at%>
+                            </div>
+                        </div>
+                        <div class="comment-text">
+                            <%=@post.title%> <br/>
+                            <%=image_tag @post.image.url(:medium),class:"img img-responsive" if @post.image?%>
+                            <br/>
+                            <%=@post.msg%>
+                        </div>
+                        <hr>
+                        <div class="action">
+                          <%= link_to '', @post, :method => :delete, data: {confirm: 'Eminmisin?',commit: 'Evet'},class:"glyphicon glyphicon-trash" %>
+                          <%= link_to '', edit_post_path(@post),class:"glyphicon glyphicon-pencil" %>
+
+                          <div id="<%=@post.id%>">
+                          <%if Like.where(user:current_user, post:@post).count>0%>
+                             <%= link_to "", unlike_post_path(@post), class:"glyphicon glyphicon-heart",remote: :true, method: :put %>
+                          <%else%>
+                             <%= link_to "", like_post_path(@post), class:"glyphicon glyphicon-heart-empty",remote: :true, method: :put %>
+                          <%end%>
+                          </div>
+                        </div>
+                        <hr>
+                        <%=render 'comments/form'%>
+                        Bunu beğenler(<%=@likeds.count%>) <br/>
+                        <% @likeds.each do |l|%>
+                          <%=l.user.name%>
+                        <% end %>
+                        <hr>
+                        <div id="comments">
+                        <%@comments.each do |c|%>
+                         <%=image_tag c.user.image.url(:mini) if c.user.image?%> <em> <%=c.user.name%> </em> <b><%=c.bdy%> </b>    <br/>
+                        <%end%>
+                      </div>
+
+                    </div>
+            </li>
+        </ul>
+    </div>
+</div>

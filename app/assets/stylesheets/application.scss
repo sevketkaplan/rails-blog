@@ -1,0 +1,32 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+body {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;    
+color: #5a5a5a;
+}
+.row {
+margin-right: -15px;
+margin-left: -15px;
+}
+.marketing .col-lg-4 {
+margin-bottom: 20px;
+text-align: center;
+}
+
+.jumbotron {
+background: #000 url("1.jpg");
+color: #FFF;
+border-radius: 0px;
+overflow: hidden;
+}
+
+.h1 small {
+font-size: 24px;
+color: white;
+text-align: center;
+}
