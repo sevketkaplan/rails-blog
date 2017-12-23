@@ -9420,3 +9420,1592 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 94.122.135.143 at 2017-12-22 00:45:16 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (6.6ms)
+  Rendered shared/_jumbotron.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 473ms (Views: 457.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-22 00:45:19 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.9ms)
+  Rendered shared/_navbar.html.erb (5.5ms)
+  Rendered shared/_jumbotron.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 187ms (Views: 117.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:45:28 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (38.9ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_jumbotron.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (2.1ms)
+Completed 200 OK in 188ms (Views: 184.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:45:29 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Z89UimWmHPyoOVyck/vf0vNxsMeLvv9bMc/t8BZtqGdk0MkL61j16hH4n19+aSIBPm+VfFL5Bk6INckfyeu7A==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevketkaplan.20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 195ms (ActiveRecord: 1.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Z89UimWmHPyoOVyck/vf0vNxsMeLvv9bMc/t8BZtqGdk0MkL61j16hH4n19+aSIBPm+VfFL5Bk6INckfyeu7A==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 244ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-22 00:45:36 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 94.122.135.143 at 2017-12-22 00:45:58 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+4ixLCx+9CwFEy9uHE3i77NSmRpfGwCSwu8+xoujvsZ4UB6xT61/YwQ3+QwMJKBrfOgu5OzA12bLz3sIJIcLA==", "user"=>{"name"=>"Şevket KAPLAN", "email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3df056ef48 @tempfile=#<Tempfile:/tmp/RackMultipart20171222-16106-11jp5qb.jpg>, @original_filename="profile.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"profile.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Kayıt"}
+Command :: file -b --mime '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-6jrhbg.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]'
+Command :: convert '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]' -auto-orient -resize "80x80>" '/tmp/1af66725a045ee7a4306ff1581c3370f20171222-16106-qstsz5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]'
+Command :: convert '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-pq4cgm.jpg[0]' -auto-orient -resize "25x25>" '/tmp/1af66725a045ee7a4306ff1581c3370f20171222-16106-n87aii'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sevketkaplan.20@gmail.com"], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-qzubtp.jpg'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 770ms (Views: 54.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:46:07 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:46:14 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3cJ2SXMJ//yujIf2AMbEr9+uqKg95yURIb9VaKcfeAre3evI/fcW6hdNRDXtVDl8ErCNE+Sg3ASYRXGHeJlrQ==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevketkaplan.20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 145ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X3cJ2SXMJ//yujIf2AMbEr9+uqKg95yURIb9VaKcfeAre3evI/fcW6hdNRDXtVDl8ErCNE+Sg3ASYRXGHeJlrQ==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 221ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:46:21 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gaUvKuUpkhV1eNExCcYefiWdnsbZxWcAOjZYT2j7jRV8KbTbVOrNh5Fw5o7BDuHqOqMZtSzziFabFhlA2iRDMg==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevketkaplan.20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 144ms (ActiveRecord: 0.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gaUvKuUpkhV1eNExCcYefiWdnsbZxWcAOjZYT2j7jRV8KbTbVOrNh5Fw5o7BDuHqOqMZtSzziFabFhlA2iRDMg==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 218ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-22 00:46:39 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DaXyhRSWb6dW2bQtaSab/oMB+ml6eQmXGJ2FKRcVhkDwKWl0pVUwNbLRg5Kh7mRqnD99Go9P5sG5vcQmpcpIZw==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevketkaplan.20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 147ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DaXyhRSWb6dW2bQtaSab/oMB+ml6eQmXGJ2FKRcVhkDwKWl0pVUwNbLRg5Kh7mRqnD99Go9P5sG5vcQmpcpIZw==", "user"=>{"email"=>"sevketkaplan.20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 197ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-22 00:46:42 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 94.122.135.143 at 2017-12-22 00:47:07 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YWk/a2xXczLPj3sZ1y1nD3WocJkTNlfzSQ0ikWDrOQVbZl3VGdg9H/OL6EBfbMIFZpaaRun5OKyZKaOGWler0g==", "user"=>{"name"=>"Şevket KAPLAN", "email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3dec619c58 @tempfile=#<Tempfile:/tmp/RackMultipart20171222-16106-1tq68sg.jpg>, @original_filename="profile.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"profile.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Kayıt"}
+Command :: file -b --mime '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-wdo7fz.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]'
+Command :: convert '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]' -auto-orient -resize "80x80>" '/tmp/8cb985e6ee3ca11da80f4a96de51514a20171222-16106-1f79rcw'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]'
+Command :: convert '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-3sjt5g.jpg[0]' -auto-orient -resize "25x25>" '/tmp/8cb985e6ee3ca11da80f4a96de51514a20171222-16106-1dxi6g1'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/7d97481b1fe66f4b51db90da7e794d9f20171222-16106-15l6p4k.jpg'
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "image_file_name", "image_content_type", "image_file_size", "image_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "sevket@example.com"], ["encrypted_password", "$2a$11$OHwXGQGvUKqliQwylwLwbeT4hbjNKAri9oRlqVQBhoWORbiD5Gn/6"], ["created_at", "2017-12-22 00:47:07.650792"], ["updated_at", "2017-12-22 00:47:07.650792"], ["name", "Şevket KAPLAN"], ["image_file_name", "profile.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 88138], ["image_updated_at", "2017-12-22 00:47:07.368736"]]
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-12-22 00:47:07.681862"], ["last_sign_in_at", "2017-12-22 00:47:07.681862"], ["current_sign_in_ip", "94.122.135.143"], ["last_sign_in_ip", "94.122.135.143"], ["updated_at", "2017-12-22 00:47:07.684475"], ["id", 3]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/posts/new
+Completed 302 Found in 485ms (ActiveRecord: 33.9ms)
+
+
+Started GET "/posts/new" for 94.122.135.143 at 2017-12-22 00:47:07 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.3ms)
+  Rendered posts/new.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 70.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-22 00:47:22 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" = 3 AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (35.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 201ms (Views: 196.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/new" for 94.122.135.143 at 2017-12-22 01:20:34 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (4.5ms)
+  Rendered posts/new.html.erb within layouts/application (8.1ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 110.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/posts" for 94.122.135.143 at 2017-12-22 01:20:40 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as JS
+  Parameters: {"utf8"=>"✓", "post"=>{"title"=>"qweqweqw", "msg"=>"qweqweqwe", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f3df01bd7f0 @tempfile=#<Tempfile:/tmp/RackMultipart20171222-16106-1waca8f.png>, @original_filename="Ruby_on_Rails-logo.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[image]\"; filename=\"Ruby_on_Rails-logo.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Oluştur"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Command :: file -b --mime '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-j5l5ly.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]'
+Command :: convert '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]' -auto-orient -resize "300x300>" '/tmp/1a31e21cbaac9a2c9b39cf9a3bbe9ff520171222-16106-1et799y'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]'
+Command :: convert '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-nbtqou.png[0]' -auto-orient -resize "100x100>" '/tmp/1a31e21cbaac9a2c9b39cf9a3bbe9ff520171222-16106-6ahyz8'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/426c59d377032a13a5d36d75e05a98b420171222-16106-14ne1h3.png'
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "msg", "created_at", "updated_at", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "qweqweqw"], ["msg", "qweqweqwe"], ["created_at", "2017-12-22 01:20:41.050601"], ["updated_at", "2017-12-22 01:20:41.050601"], ["image_file_name", "Ruby_on_Rails-logo.png"], ["image_content_type", "image/png"], ["image_file_size", 54899], ["image_updated_at", "2017-12-22 01:20:40.671337"], ["user_id", 3]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/posts
+Completed 200 OK in 416ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-22 01:20:41 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" = 3 AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" = 3 AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (13.0ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:45:35 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 394ms (Views: 379.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:45:41 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (32.3ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 140ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:45:43 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:46:01 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (89.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 278ms (Views: 217.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:46:06 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:46:25 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (12.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:46:26 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:46:27 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:46:28 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:46:28 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (13.1ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:46:29 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:46:30 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (10.1ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:46:30 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:49:08 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:49:48 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:49:50 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:49:51 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:50:17 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:51:05 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:51:07 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:51:09 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 13:51:10 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 13:51:11 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 94.122.135.143 at 2017-12-23 14:39:30 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 8[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."user_id" IS NULL AND "likes"."post_id" = 7[0m
+  Rendered posts/index.html.erb within layouts/application (16.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 106ms (Views: 99.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 14:46:12 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_jumbotron.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 149ms (Views: 139.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-23 14:46:15 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IDu7QK922a+lNtQ6jogRcsgtO03NoKXxTPgnHip1e/JN0VzHqFxnzz8Wd93K2mNRuiCnFHVfNF64oQCBCOrWvw==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-23 14:46:15.460559"], ["sign_in_count", 2], ["updated_at", "2017-12-23 14:46:15.462784"], ["id", 3]]
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 218ms (ActiveRecord: 17.8ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 14:46:16 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 14:50:45 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (5.2ms)
+  Rendered shared/_jumbotron.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 1824ms (Views: 1821.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 15:14:53 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 15:14:54 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 1696ms (Views: 1692.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 15:14:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.5ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 68.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 15:16:12 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 15:17:31 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.5ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 15:18:20 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (5.0ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:46:33 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (138.8ms)
+  Rendered shared/_navbar.html.erb (5.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 345ms (Views: 308.0ms | ActiveRecord: 8.6ms)
+
+
+Started PUT "/users" for 94.122.135.143 at 2017-12-23 21:46:55 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X+mwbaDyju3fAmOqY10tD9w+qq1aKHjOXX996RLjmbCo2LwyTtVLILxJ6V05tT8XwCqHw0s2WB3hTpxgHbQ2qQ==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8fb599b488 @tempfile=#<Tempfile:/tmp/RackMultipart20171223-1219-p863r0.jpg>, @original_filename="1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["encrypted_password", "$2a$11$gaP.4OumMxEkTMmfjOAoyun3hgmSTiJJ8n6Z8anI/xPTu3Kh2UZO6"], ["updated_at", "2017-12-23 21:46:56.215983"], ["id", 3]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 365ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 21:46:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 67.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:47:00 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.6ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 105ms (Views: 100.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:53:27 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 2.5ms)
+
+
+  
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f8fb0b8e628>
+Did you mean?  fork):
+  
+app/controllers/application_controller.rb:8:in `configure_permitted_parameters'
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:54:47 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (34.3ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 116ms (Views: 94.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:58:43 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (802.0ms)
+Completed 500 Internal Server Error in 809ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f8f8cb454b0>:0x007f8f8c0cc740>
+Did you mean?  format
+               formats
+               form_tag
+               form_for
+               formats=
+               form_with
+               fork):
+    31:     <%= f.password_field :current_password, autocomplete: "off" %>
+    32:   </div>
+    33: <div class="form-group">
+    34:     <%= form.label :image %>
+    35:     <%= form.file_field :image, id: :user_image,class:"form-control" %>
+    36:   </div>
+    37:   <div class="actions">
+  
+app/views/devise/registrations/edit.html.erb:34:in `block in _app_views_devise_registrations_edit_html_erb__4245362339149264319_70127253027160'
+app/views/devise/registrations/edit.html.erb:3:in `_app_views_devise_registrations_edit_html_erb__4245362339149264319_70127253027160'
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:58:57 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (960.7ms)
+Completed 500 Internal Server Error in 967ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f8f8cb454b0>:0x007f8fb03fd490>
+Did you mean?  format
+               formats
+               form_tag
+               form_for
+               formats=
+               form_with
+               fork):
+    31:     <%= f.password_field :current_password, autocomplete: "off" %>
+    32:   </div>
+    33: <div class="form-group">
+    34:     <%= form.label :image %>
+    35:     <%= form.file_field :image, id: :image,class:"form-control" %>
+    36:   </div>
+    37:   <div class="actions">
+  
+app/views/devise/registrations/edit.html.erb:34:in `block in _app_views_devise_registrations_edit_html_erb__4245362339149264319_70127628746640'
+app/views/devise/registrations/edit.html.erb:3:in `_app_views_devise_registrations_edit_html_erb__4245362339149264319_70127628746640'
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:59:36 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (891.7ms)
+Completed 500 Internal Server Error in 898ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x007f8f8cb454b0>:0x007f8fb3d801b8>
+Did you mean?  format
+               formats
+               form_tag
+               form_for
+               formats=
+               form_with
+               fork):
+    31:     <%= f.password_field :current_password, autocomplete: "off" %>
+    32:   </div>
+    33: <div class="form-group">
+    34:     <%= form.label :image %>
+    35:     <%= form.file_field :image, id: :image,class:"form-control" %>
+    36:   </div>
+    37:   <div class="actions">
+  
+app/views/devise/registrations/edit.html.erb:34:in `block in _app_views_devise_registrations_edit_html_erb__4245362339149264319_70127256753920'
+app/views/devise/registrations/edit.html.erb:3:in `_app_views_devise_registrations_edit_html_erb__4245362339149264319_70127256753920'
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 21:59:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for 94.122.135.143 at 2017-12-23 22:00:21 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KuHu3ubgOYOqQYxuN9TrYZarSC2gRr/GyWzPupJcdJyXFpqUG2Bfd72BfvCke3F9i+XPjf38A8GOJVDgRCQQ5w==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8fb082d088 @tempfile=#<Tempfile:/tmp/RackMultipart20171223-1219-1c8gha2.jpg>, @original_filename="1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-123mtpe.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]'
+Command :: convert '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]' -auto-orient -resize "80x80>" '/tmp/7f41c5a0320ca48f809fe379d8963d4720171223-1219-xqd5jd'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]'
+Command :: convert '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1xtezmp.jpg[0]' -auto-orient -resize "25x25>" '/tmp/7f41c5a0320ca48f809fe379d8963d4720171223-1219-sw6b7a'
+Command :: file -b --mime '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1qx7n72.jpg'
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["encrypted_password", "$2a$11$0qpxJqLTLO0yYHUPKmx3Led/DhfJKqZALXLcQaDYklcKfTz3Z2eRu"], ["image_file_name", "1.jpg"], ["image_file_size", 122589], ["image_updated_at", "2017-12-23 22:00:21.858909"], ["updated_at", "2017-12-23 22:00:22.849111"], ["id", 3]]
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/original/profile.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/thumb/profile.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/mini/profile.jpg
+  [1m[35m (16.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 1308ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:00:22 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:00:46 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for 94.122.135.143 at 2017-12-23 22:01:19 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9/nI9IKgqyOkpw4a95E7rrt0O3TtShTnGoO56al9xMAAyMSrbIdu7sfshO2teSm2p2AWGvxUNDSmslhgpipr2Q==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8fb387d530 @tempfile=#<Tempfile:/tmp/RackMultipart20171223-1219-16y20an.jpg>, @original_filename="proofile.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"proofile.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-18swmjs.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]'
+Command :: convert '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]' -auto-orient -resize "80x80>" '/tmp/cf85f007017bd80b60ac21c7a9a5a58520171223-1219-1rj9wgd'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]'
+Command :: convert '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1k71o5y.jpg[0]' -auto-orient -resize "25x25>" '/tmp/cf85f007017bd80b60ac21c7a9a5a58520171223-1219-1qgwtxq'
+Command :: file -b --mime '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-17xie78.jpg'
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["encrypted_password", "$2a$11$mYK.eS/I520m/gyIQ/k2d.qmKP33CABX0lsC52FKue6nmfrj6qSGq"], ["image_file_name", "proofile.jpg"], ["image_file_size", 88138], ["image_updated_at", "2017-12-23 22:01:19.295490"], ["updated_at", "2017-12-23 22:01:19.634471"], ["id", 3]]
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/original/1.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/thumb/1.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/mini/1.jpg
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 656ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:01:19 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 94.122.135.143 at 2017-12-23 22:04:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zw0AyYag4aPHrVFGYlM4Q19JeWmD3Vhx3iCxJFgfsJba+nSDeyCHV9Bto9jx/KJfQgf+yd5n5HaZaS5+jmfU7Q=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:04:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:04:46 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:04:48 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EsBfuurrpqDJUcKxWFsatpBFHha/yJ+BgoCYsX9+2zH0gYiQQMg44lFIvLesMLMegAQ3ioSfRElIipCDqNpqdw==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-23 22:04:48.560800"], ["last_sign_in_at", "2017-12-23 14:46:15.460559"], ["sign_in_count", 3], ["updated_at", "2017-12-23 22:04:48.562071"], ["id", 3]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 164ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:04:48 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:04:50 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:06:11 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:07:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:07:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:09:42 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 94.122.135.143 at 2017-12-23 22:09:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+8ysei+hk7trdAxiHEjgrZgzIgh1ra3Gcu89LBPw4Y/koWH2PlRWIpXunp0lAoRRT556HI62j3dRVMvxqrT/Iw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:09:56 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:09:58 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (19.8ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 22:10:05 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 22:11:10 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:11:11 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:11:12 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:11:14 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ta8SulX2ev0LvPFgs25Gxf0H6ulp7movaOJaizvKX7yXtsBcXgYvVmpSX6RQlgnLdYMtEjzoIZ37zVXZcGwTrQ==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-23 22:11:14.666446"], ["last_sign_in_at", "2017-12-23 22:04:48.560800"], ["sign_in_count", 4], ["updated_at", "2017-12-23 22:11:14.668145"], ["id", 3]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 165ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:11:14 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (6.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:11:17 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:12:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:13:42 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:14:20 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 94.122.135.143 at 2017-12-23 22:15:37 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IMvn7X/oWVna+ZR4ZKtP1e8XyDlZEUyX906KU9YCSIPjkBamXMnQKRZrmNDEuOIiNlxjQCEFDitW2fFKM8YkFg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:15:38 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 22:15:41 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:15:54 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:16:26 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gBKLxo6ouaY2hZSk7K3dgqhh0XZW6LJvlUKIOBEGiIDJFOioz4TD/aLtA9PzDouetj0KbVPMWX5s9FPB5zt9fw==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-23 22:16:26.421389"], ["last_sign_in_at", "2017-12-23 22:11:14.666446"], ["sign_in_count", 5], ["updated_at", "2017-12-23 22:16:26.422627"], ["id", 3]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 165ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:16:26 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:16:27 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_jumbotron.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:17:06 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:17:09 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 94.122.135.143 at 2017-12-23 22:18:10 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3di3Ntq/PKcYyv4FUokVSuLpGzeXik9oza3XM2Zpqh0iV4bTq52H0knn0QFXR2WmMeoRSsVwr+v0vcQJ/9H+/Q=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:18:11 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 22:18:19 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 94.122.135.143 at 2017-12-23 22:19:36 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:19:38 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 94.122.135.143 at 2017-12-23 22:19:40 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+qtql4X7JknRuBnGkKLnRH+WeuK36xHq1aHk1zkVTcyPk+13mFDAPAgVuuqrmyXdlgvwbyAMCuHOok1l+xATXw==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "sevket@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-12-23 22:19:41.014052"], ["last_sign_in_at", "2017-12-23 22:16:26.421389"], ["sign_in_count", 6], ["updated_at", "2017-12-23 22:19:41.015405"], ["id", 3]]
+  [1m[35m (15.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 165ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:19:42 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:19:47 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:20:17 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:20:53 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:22:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:25:06 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:25:58 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:27:26 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (4.0ms)
+  Rendered shared/_jumbotron.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 112ms (Views: 108.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:28:44 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for 94.122.135.143 at 2017-12-23 22:29:08 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lfaq0VfdAZYEmEfOU2aHeEPtsBl8o0WiI9C+tHutujWEmc7QErTsnBbvqoOUZlm/uqFq09kBu9vZ9IYfgCZM7A==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8fb2e7a8a8 @tempfile=#<Tempfile:/tmp/RackMultipart20171223-1219-1o70d9k.jpg>, @original_filename="1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-2vzgu2.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]'
+Command :: convert '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]' -auto-orient -resize "80x80>" '/tmp/9faade2a1ada0b9a23d6cba74a61fbf520171223-1219-2h7qhk'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]'
+Command :: convert '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-1y2v4tp.jpg[0]' -auto-orient -resize "25x25>" '/tmp/9faade2a1ada0b9a23d6cba74a61fbf520171223-1219-5ez14l'
+Command :: file -b --mime '/tmp/c4ca4238a0b923820dcc509a6f75849b20171223-1219-xhkbdq.jpg'
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["encrypted_password", "$2a$11$zsB2gNbhaaUKIhc4wt0eD.Vj.kX5ayTvTpfvcGilE4s95VCyp1NTi"], ["image_file_name", "1.jpg"], ["image_file_size", 122589], ["image_updated_at", "2017-12-23 22:29:08.306094"], ["updated_at", "2017-12-23 22:29:09.036728"], ["id", 3]]
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/original/proofile.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/thumb/proofile.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/mini/proofile.jpg
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 1048ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:29:09 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_jumbotron.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 94.122.135.143 at 2017-12-23 22:29:12 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_jumbotron.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/users" for 94.122.135.143 at 2017-12-23 22:29:24 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wVfwbX9vpMbAF1VZ5rkWWPSZaMl5HRce3Q0jI3m3gE93xNs5woS+RjBr1ez98It8f30z7dEM77kM3jUCVpZeEA==", "user"=>{"email"=>"sevket@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f8fb6440bb8 @tempfile=#<Tempfile:/tmp/RackMultipart20171223-1219-kf1ryc.jpg>, @original_filename="proofile.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"proofile.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+Command :: file -b --mime '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rfp6op.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]'
+Command :: convert '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]' -auto-orient -resize "80x80>" '/tmp/da760731e4a724e5807760d654598dc820171223-1219-1vjxry5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]'
+Command :: convert '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-rs2gvt.jpg[0]' -auto-orient -resize "25x25>" '/tmp/da760731e4a724e5807760d654598dc820171223-1219-wub9t4'
+Command :: file -b --mime '/tmp/845c3b5f047c2da6808e1a2d7e21235620171223-1219-1s4qkvq.jpg'
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = ?, "image_file_name" = ?, "image_file_size" = ?, "image_updated_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["encrypted_password", "$2a$11$3XK732Apikg75oEiBMjLTu9iXpyAtar7MZ7Xwn/QsFTnr7Vpf5A7q"], ["image_file_name", "proofile.jpg"], ["image_file_size", 88138], ["image_updated_at", "2017-12-23 22:29:25.112006"], ["updated_at", "2017-12-23 22:29:25.437557"], ["id", 3]]
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/original/1.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/thumb/1.jpg
+[paperclip] deleting /home/ubuntu/yazilim_muh/public/system/users/images/000/000/003/mini/1.jpg
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://ruby-deneme-y12542009.c9users.io/
+Completed 302 Found in 642ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/" for 94.122.135.143 at 2017-12-23 22:29:25 +0000
+Cannot render console from 94.122.135.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (4.3ms)
+  Rendered shared/_jumbotron.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.5ms)
+
+
